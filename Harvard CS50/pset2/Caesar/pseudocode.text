@@ -1,0 +1,21 @@
+1- you must now that the function phrase exists
+2- begin taking two arguement's, if you take more or less than two
+print "Usage: ./caesar key" and EXIT
+3- see if the second is a natural number, checking each digit of it
+4- if it's a natural number do the following:
+    a)convert this string (natural number) to an int called k
+    b)send k value to the function phrase
+   if it's NOT a natural number do the following:
+    a)print "Usage: ./caesar key" and EXIT
+5- ask "plaintext:" to get a string
+6- print "ciphertext:"
+7- print each character of the plaintext changing each by the following rules:
+    if the character is'not alphabetic
+    a)dont change
+    if the character is alphabetic and lower case
+    a)change by the formula --> changed character = 96 + (character-96+key)%26
+    using his ASCII number as 'character'
+    if the character is alphabetic and upper case
+    a)change by the formula --> changed character = 64 + (character-64+key)%26
+    using his ASCII number as 'character'
+8- print a new line and exit

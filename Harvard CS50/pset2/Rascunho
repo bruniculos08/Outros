@@ -1,0 +1,174 @@
+    int s = strlen(word);
+    for (int k=0; word[k] != '\0'; k++)
+    {
+        if (isupper(word[k])==true)
+        {
+             int l = word[k] + 32;
+            word[k] = l;
+        }
+    }
+    if (word[0] = "\'")
+    {
+        word[s] = '\0';
+        for (int k=0; word[k] != '\0'; k++)
+        {
+           word[k] = char word[k+1];
+        }
+    }
+
+ CODE TO UPPER LETTER
+
+       char *totest = malloc(sizeof(word));
+    strcpy(totest, word);
+
+    for (int i=0 ; totest[i] != '\0'; i++)
+    {
+        if(isupper(totest[i]==true))
+        {
+            totest[i] = tolower(totest[i]);
+        }
+    }
+
+
+
+
+
+
+
+
+    for (checker = table[b]; checker != NULL; checker = checker->next)
+    {
+        if (strcmp(checker->word, word)==true)
+        {
+            return true;
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+speller:
+	clang -ggdb3 -O0 -Qunused-arguments -std=c11 -Wall -Werror -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wshadow -c -o speller.o speller.c
+	clang -ggdb3 -O0 -Qunused-arguments -std=c11 -Wall -Werror -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wshadow -c -o dictionary.o dictionary.c
+	clang -ggdb3 -O0 -Qunused-arguments -std=c11 -Wall -Werror -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wshadow -o speller speller.o dictionary.o -lm
+
+
+
+
+
+
+
+
+
+
+
+bool check(const char *word)
+{
+    int b = hash(word);
+    node *checker = malloc(sizeof(node));
+    checker = table[b];
+
+    while  (checker != NULL)
+    {
+        if (strcmp(checker->word, word)==true)
+        {
+            return true;
+        }
+        checker = checker->next;
+    }
+    // TODO
+    return false;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        if (word[0] != '\'')
+        {
+        lower_case_word[i] = tolower(word[i]);
+        }
+        else
+        {
+        lower_case_word[i] = tolower(word[i+1]);
+        }
+    }
+    lower_case_word[strlen(word)+1] = '\0';
+
+
+
+
+
+
+
+
+
+    TESTS
+
+    Supost Faster Result
+
+
+    WORDS MISSPELLED:     955
+    WORDS IN DICTIONARY:  143091
+    WORDS IN TEXT:        17756
+    TIME IN load:         0.02
+    TIME IN check:        0.49
+    TIME IN size:         0.00
+    TIME IN unload:       0.00
+    TIME IN TOTAL:        0.51
+
+    Supost Slower
+
+    WORDS MISSPELLED:     955
+    WORDS IN DICTIONARY:  143091
+    WORDS IN TEXT:        17756
+    TIME IN load:         0.02
+    TIME IN check:        7.53
+    TIME IN size:         0.00
+    TIME IN unload:       0.00
+    TIME IN TOTAL:        7.56
+
+
+
+
+
+
+
+
+
+
+
+        if (word[1] != '\0')
+    {
+    index += (tolower(word[0])-97)*26 + (tolower(word[1])-97);
+    }
+    else
+    {
+    index += (tolower(word[0])-97)*26;
+    }

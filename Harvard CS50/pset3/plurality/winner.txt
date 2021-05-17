@@ -1,0 +1,18 @@
+    int i;
+    int voter_count=0;
+
+    for(i=0; i<candidate_count; i++)
+    {
+        voter_count+=candidates[i].votes;
+    }
+
+    float needed_votes = (voter_count)/candidate_count;
+
+    for (i=0; i<candidate_count; i++)
+    {
+     if ((float)candidates[i].votes >= needed_votes)
+     {
+            printf("%s\n", candidates[i].name);
+     }
+    }
+    while (i<candidate_count);
