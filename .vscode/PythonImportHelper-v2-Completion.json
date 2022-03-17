@@ -1,0 +1,124 @@
+[
+    {
+        "label": "get_float",
+        "importPath": "cs50",
+        "description": "cs50",
+        "isExtraImport": true,
+        "detail": "cs50",
+        "documentation": {}
+    },
+    {
+        "label": "get_int",
+        "importPath": "cs50",
+        "description": "cs50",
+        "isExtraImport": true,
+        "detail": "cs50",
+        "documentation": {}
+    },
+    {
+        "label": "get_string",
+        "importPath": "cs50",
+        "description": "cs50",
+        "isExtraImport": true,
+        "detail": "cs50",
+        "documentation": {}
+    },
+    {
+        "label": "floor",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "Harvard CS50.pset6.cash.cash",
+        "description": "Harvard CS50.pset6.cash.cash",
+        "peekOfCode": "def main():\n    while True:\n        s = get_float(\"Change owed: \")\n        m = int(round(s * 100))\n        if m > 0:\n            break\n    q = m // 25\n    d = (m % 25) // 10\n    n = ((m % 25) % 10) // 5\n    p = ((m % 25) % 10) % 5",
+        "detail": "Harvard CS50.pset6.cash.cash",
+        "documentation": {}
+    },
+    {
+        "label": "sequences",
+        "kind": 5,
+        "importPath": "Harvard CS50.pset6.dna.dna",
+        "description": "Harvard CS50.pset6.dna.dna",
+        "peekOfCode": "sequences = open(f\"{sys.argv[2]}\", \"r\")\nfor line in sequences:\n    nTATC=0\n    nAGATC=0\n    nAATG=0\n    nGAAA=0\n    nTCTG=0\n    nGATA=0\n    nTTTTTTCT=0\n    nTCTAG=0",
+        "detail": "Harvard CS50.pset6.dna.dna",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "kind": 5,
+        "importPath": "Harvard CS50.pset6.readability.readability",
+        "description": "Harvard CS50.pset6.readability.readability",
+        "peekOfCode": "text = get_string(\"Text: \")\nstr.split(text)\naveragesofs=0\naveragesofl=0\nsentences=0\ni=0\nsa=0\nla=0\nx=0\ny=0",
+        "detail": "Harvard CS50.pset6.readability.readability",
+        "documentation": {}
+    },
+    {
+        "label": "nwords",
+        "kind": 5,
+        "importPath": "Harvard CS50.pset6.readability.readability",
+        "description": "Harvard CS50.pset6.readability.readability",
+        "peekOfCode": "nwords = len(str.split(text))\nwhile i < nwords :\n    j=0\n    m = len(str.split(text)[i])\n    while j < m:\n        if str.split(text)[i][j]==\".\":\n            sentences+=1\n        if str.split(text)[i][j]==\"?\":\n            sentences+=1\n        if str.split(text)[i][j]==\"!\":",
+        "detail": "Harvard CS50.pset6.readability.readability",
+        "documentation": {}
+    },
+    {
+        "label": "averagesofl",
+        "kind": 5,
+        "importPath": "Harvard CS50.pset6.readability.readability",
+        "description": "Harvard CS50.pset6.readability.readability",
+        "peekOfCode": "averagesofl = (letters*k)\naveragesofs = (sentences*k)\nGrade = round(0.0588 * (averagesofl) - 0.296 * (averagesofs) - 15.8)\nif Grade<1:\n    print(f\"Before Grade 1\")\nif Grade>=1 and Grade<=16:\n    print(f\"Grade {Grade}\")\nif Grade > 16:\n    print(f\"Grade 16+\")",
+        "detail": "Harvard CS50.pset6.readability.readability",
+        "documentation": {}
+    },
+    {
+        "label": "averagesofs",
+        "kind": 5,
+        "importPath": "Harvard CS50.pset6.readability.readability",
+        "description": "Harvard CS50.pset6.readability.readability",
+        "peekOfCode": "averagesofs = (sentences*k)\nGrade = round(0.0588 * (averagesofl) - 0.296 * (averagesofs) - 15.8)\nif Grade<1:\n    print(f\"Before Grade 1\")\nif Grade>=1 and Grade<=16:\n    print(f\"Grade {Grade}\")\nif Grade > 16:\n    print(f\"Grade 16+\")",
+        "detail": "Harvard CS50.pset6.readability.readability",
+        "documentation": {}
+    },
+    {
+        "label": "Grade",
+        "kind": 5,
+        "importPath": "Harvard CS50.pset6.readability.readability",
+        "description": "Harvard CS50.pset6.readability.readability",
+        "peekOfCode": "Grade = round(0.0588 * (averagesofl) - 0.296 * (averagesofs) - 15.8)\nif Grade<1:\n    print(f\"Before Grade 1\")\nif Grade>=1 and Grade<=16:\n    print(f\"Grade {Grade}\")\nif Grade > 16:\n    print(f\"Grade 16+\")",
+        "detail": "Harvard CS50.pset6.readability.readability",
+        "documentation": {}
+    },
+    {
+        "label": "age",
+        "kind": 5,
+        "importPath": "Harvard CS50.pset7.age",
+        "description": "Harvard CS50.pset7.age",
+        "peekOfCode": "age = int(input(\"What is your age? \"))\nprint(f\"You are {age*365} days old\")",
+        "detail": "Harvard CS50.pset7.age",
+        "documentation": {}
+    }
+]
