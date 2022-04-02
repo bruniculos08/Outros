@@ -120,5 +120,32 @@
         "peekOfCode": "age = int(input(\"What is your age? \"))\nprint(f\"You are {age*365} days old\")",
         "detail": "Harvard CS50.pset7.age",
         "documentation": {}
+    },
+    {
+        "label": "target",
+        "kind": 5,
+        "importPath": "pythonTeste",
+        "description": "pythonTeste",
+        "peekOfCode": "target = int(input(\"Digite o valor alvo: \"))\nsize = int(input(\"Digite o tamanho do vetor: \"))\nvetor = []\nfor i in range(size):\n    n = int(input(f\"Digite o número {i+1} do vetor: \"))\n    vetor.append(n)\nfor i in range(size):\n    for j in range(size-1):\n        if(vetor[i]+vetor[j+1] == target): \n            print([i, j+1])",
+        "detail": "pythonTeste",
+        "documentation": {}
+    },
+    {
+        "label": "size",
+        "kind": 5,
+        "importPath": "pythonTeste",
+        "description": "pythonTeste",
+        "peekOfCode": "size = int(input(\"Digite o tamanho do vetor: \"))\nvetor = []\nfor i in range(size):\n    n = int(input(f\"Digite o número {i+1} do vetor: \"))\n    vetor.append(n)\nfor i in range(size):\n    for j in range(size-1):\n        if(vetor[i]+vetor[j+1] == target): \n            print([i, j+1])",
+        "detail": "pythonTeste",
+        "documentation": {}
+    },
+    {
+        "label": "vetor",
+        "kind": 5,
+        "importPath": "pythonTeste",
+        "description": "pythonTeste",
+        "peekOfCode": "vetor = []\nfor i in range(size):\n    n = int(input(f\"Digite o número {i+1} do vetor: \"))\n    vetor.append(n)\nfor i in range(size):\n    for j in range(size-1):\n        if(vetor[i]+vetor[j+1] == target): \n            print([i, j+1])",
+        "detail": "pythonTeste",
+        "documentation": {}
     }
 ]
