@@ -1,0 +1,101 @@
+[
+    {
+        "label": "Keys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "Keys",
+        "description": "Keys",
+        "detail": "Keys",
+        "documentation": {}
+    },
+    {
+        "label": "tweepy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tweepy",
+        "description": "tweepy",
+        "detail": "tweepy",
+        "documentation": {}
+    },
+    {
+        "label": "API_key",
+        "kind": 5,
+        "importPath": "Keys",
+        "description": "Keys",
+        "peekOfCode": "API_key = \"xPwZwsa6NsHtsfn6y5vYgiFkg\"\nAPI_key_secret = \"bPMzp3dfmy0jOS88BB140l9GBvIy09I3S6mnyXvEsYOyR9hTeq\"\nbearer_token = \"AAAAAAAAAAAAAAAAAAAAAFaDkgEAAAAAbCEeZVo4k%2B8alXwcO%2BUU71HrzcI%3DHzejkCJb6cG7KAIPbcZK7DUaKgHNUhBwU2iYn1gfWknocb1gsM\"\nacess_token = \"1141145381356605442-cmt5jaY6P2doggMY69kBneDn9HQEdD\"\nacess_token_secret = \"TEjouESQg5FD4aM0vZrHGELjSCaheEOQhgqT913XV5I7k\"\nclient_id = \"RHExR3lzZzlGblFxQVRzRktXanc6MTpjaQ\"\nclient_secret = \"D_0GHUfgwfaPm6Yaql5eTKc3CyrLwv2L64Uvau3ZNSN8n8eGDt\"",
+        "detail": "Keys",
+        "documentation": {}
+    },
+    {
+        "label": "API_key_secret",
+        "kind": 5,
+        "importPath": "Keys",
+        "description": "Keys",
+        "peekOfCode": "API_key_secret = \"bPMzp3dfmy0jOS88BB140l9GBvIy09I3S6mnyXvEsYOyR9hTeq\"\nbearer_token = \"AAAAAAAAAAAAAAAAAAAAAFaDkgEAAAAAbCEeZVo4k%2B8alXwcO%2BUU71HrzcI%3DHzejkCJb6cG7KAIPbcZK7DUaKgHNUhBwU2iYn1gfWknocb1gsM\"\nacess_token = \"1141145381356605442-cmt5jaY6P2doggMY69kBneDn9HQEdD\"\nacess_token_secret = \"TEjouESQg5FD4aM0vZrHGELjSCaheEOQhgqT913XV5I7k\"\nclient_id = \"RHExR3lzZzlGblFxQVRzRktXanc6MTpjaQ\"\nclient_secret = \"D_0GHUfgwfaPm6Yaql5eTKc3CyrLwv2L64Uvau3ZNSN8n8eGDt\"",
+        "detail": "Keys",
+        "documentation": {}
+    },
+    {
+        "label": "bearer_token",
+        "kind": 5,
+        "importPath": "Keys",
+        "description": "Keys",
+        "peekOfCode": "bearer_token = \"AAAAAAAAAAAAAAAAAAAAAFaDkgEAAAAAbCEeZVo4k%2B8alXwcO%2BUU71HrzcI%3DHzejkCJb6cG7KAIPbcZK7DUaKgHNUhBwU2iYn1gfWknocb1gsM\"\nacess_token = \"1141145381356605442-cmt5jaY6P2doggMY69kBneDn9HQEdD\"\nacess_token_secret = \"TEjouESQg5FD4aM0vZrHGELjSCaheEOQhgqT913XV5I7k\"\nclient_id = \"RHExR3lzZzlGblFxQVRzRktXanc6MTpjaQ\"\nclient_secret = \"D_0GHUfgwfaPm6Yaql5eTKc3CyrLwv2L64Uvau3ZNSN8n8eGDt\"",
+        "detail": "Keys",
+        "documentation": {}
+    },
+    {
+        "label": "acess_token",
+        "kind": 5,
+        "importPath": "Keys",
+        "description": "Keys",
+        "peekOfCode": "acess_token = \"1141145381356605442-cmt5jaY6P2doggMY69kBneDn9HQEdD\"\nacess_token_secret = \"TEjouESQg5FD4aM0vZrHGELjSCaheEOQhgqT913XV5I7k\"\nclient_id = \"RHExR3lzZzlGblFxQVRzRktXanc6MTpjaQ\"\nclient_secret = \"D_0GHUfgwfaPm6Yaql5eTKc3CyrLwv2L64Uvau3ZNSN8n8eGDt\"",
+        "detail": "Keys",
+        "documentation": {}
+    },
+    {
+        "label": "acess_token_secret",
+        "kind": 5,
+        "importPath": "Keys",
+        "description": "Keys",
+        "peekOfCode": "acess_token_secret = \"TEjouESQg5FD4aM0vZrHGELjSCaheEOQhgqT913XV5I7k\"\nclient_id = \"RHExR3lzZzlGblFxQVRzRktXanc6MTpjaQ\"\nclient_secret = \"D_0GHUfgwfaPm6Yaql5eTKc3CyrLwv2L64Uvau3ZNSN8n8eGDt\"",
+        "detail": "Keys",
+        "documentation": {}
+    },
+    {
+        "label": "client_id",
+        "kind": 5,
+        "importPath": "Keys",
+        "description": "Keys",
+        "peekOfCode": "client_id = \"RHExR3lzZzlGblFxQVRzRktXanc6MTpjaQ\"\nclient_secret = \"D_0GHUfgwfaPm6Yaql5eTKc3CyrLwv2L64Uvau3ZNSN8n8eGDt\"",
+        "detail": "Keys",
+        "documentation": {}
+    },
+    {
+        "label": "client_secret",
+        "kind": 5,
+        "importPath": "Keys",
+        "description": "Keys",
+        "peekOfCode": "client_secret = \"D_0GHUfgwfaPm6Yaql5eTKc3CyrLwv2L64Uvau3ZNSN8n8eGDt\"",
+        "detail": "Keys",
+        "documentation": {}
+    },
+    {
+        "label": "api",
+        "kind": 2,
+        "importPath": "MainCode",
+        "description": "MainCode",
+        "peekOfCode": "def api():\n    \"\"\"\n    To open the API principal object, first we need to create a object to realize the authentication\n    needed to create the API principal object. The following object receives all the necessary keys and\n    tokens for the authentication process:\n    \"\"\"\n    authentication = tweepy.OAuthHandler(keys.API_key, keys.API_key_secret)\n    authentication.set_access_token(keys.acess_token, keys.acess_token_secret)\n    \"\"\"\n    Return the API principal object with the authentication realized (the constructor method needs the",
+        "detail": "MainCode",
+        "documentation": {}
+    },
+    {
+        "label": "tweet",
+        "kind": 2,
+        "importPath": "MainCode",
+        "description": "MainCode",
+        "peekOfCode": "def tweet(api: tweepy.API, message: str, image_path = None):\n    if image_path:\n        api.update_status_with_media(message, image_path)\n    else:\n        api.update_status(message)\n    print(\"Tweet successfully!\")\nif __name__ == '__main__':\n    oindividualist = api()\n    tweet(oindividualist, \"testando API meus caros...\")",
+        "detail": "MainCode",
+        "documentation": {}
+    }
+]
