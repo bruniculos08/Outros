@@ -18,6 +18,14 @@
         "documentation": {}
     },
     {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "API_key",
         "kind": 5,
         "importPath": "Keys",
@@ -94,7 +102,25 @@
         "kind": 2,
         "importPath": "MainCode",
         "description": "MainCode",
-        "peekOfCode": "def tweet(api: tweepy.API, message: str, image_path = None):\n    if image_path:\n        api.update_status_with_media(message, image_path)\n    else:\n        api.update_status(message)\n    print(\"Tweet successfully!\")\nif __name__ == '__main__':\n    oindividualist = api()\n    tweet(oindividualist, \"testando API meus caros...\")",
+        "peekOfCode": "def tweet(api: tweepy.API, message: str, image_path = None):\n    if image_path:\n        api.update_status_with_media(message, image_path)\n    else:\n        api.update_status(message)\n    print(\"Tweet successfully!\")\ndef semestreUdesc():\n    semesters_file = open(generalPath + \"\\\\semestres.txt\")\n    lines = semesters_file.readlines()\n    actual_case = lines[0].split(\",\")",
+        "detail": "MainCode",
+        "documentation": {}
+    },
+    {
+        "label": "semestreUdesc",
+        "kind": 2,
+        "importPath": "MainCode",
+        "description": "MainCode",
+        "peekOfCode": "def semestreUdesc():\n    semesters_file = open(generalPath + \"\\\\semestres.txt\")\n    lines = semesters_file.readlines()\n    actual_case = lines[0].split(\",\")\n    print(actual_case)\n    last_post_file = open(generalPath + \"\\\\ultimoPostData.txt\")\n    last_post = last_post_file.readline()\n    actual_date = datetime.now().date()\n    last_post_date = datetime.strptime(last_post, \"%Y-%m-%d\").date()\n    if(actual_date > last_post_date):",
+        "detail": "MainCode",
+        "documentation": {}
+    },
+    {
+        "label": "generalPath",
+        "kind": 5,
+        "importPath": "MainCode",
+        "description": "MainCode",
+        "peekOfCode": "generalPath = \"C:\\\\Users\\\\bruni\\\\OneDrive\\\\Documentos\\\\GitHub\\\\Outros\\\\TwitterBot\"\ndef api():\n    \"\"\"\n    To open the API principal object, first we need to create a object to realize the authentication\n    needed to create the API principal object. The following object receives all the necessary keys and\n    tokens for the authentication process:\n    \"\"\"\n    authentication = tweepy.OAuthHandler(keys.API_key, keys.API_key_secret)\n    authentication.set_access_token(keys.acess_token, keys.acess_token_secret)\n    \"\"\"",
         "detail": "MainCode",
         "documentation": {}
     }
