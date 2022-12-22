@@ -28,35 +28,43 @@ def tweet(api: tweepy.API, message: str, image_path = None):
         api.update_status(message)
     print("Tweet successfully!")
 
-def semestreUdesc():
+def semestreUdesc(oindividualist):
     semesters_file = open(generalPath + "\\semestres.txt")
     lines = semesters_file.readlines()
-
     actual_case = lines[0].split(",")
+    semesters_file.close()
+
     print(actual_case)
 
-    last_post_file = open(generalPath + "\\ultimoPostData.txt")
+    last_post_file = open(generalPath + "\\ultimoPostData.txt", mode="r")
     last_post = last_post_file.readline()
+    last_post_file.close()
 
     actual_date = datetime.now().date()
     last_post_date = datetime.strptime(last_post, "%Y-%m-%d").date()
 
+    if(actual_date == actual_case[2]):
+        semesters_file = open(generalPath + "\semestres.txt", mode="w")
+        semesters_file.writelines(lines[1:])
+
     if(actual_date > last_post_date):
         if(actual_case[0] == "fim"):
             result = datetime.strptime(actual_case[2], "%Y-%m-%d").date() - actual_date
-            print(f"Faltam {int(result.days/30)} meses e {result.days%30} dias para o fim do semestre na UDESC.")
+            string = f"Faltam {int(result.days/30)} meses e {result.days%30} dias para o fim do semestre na UDESC."
+            print(string)
+            # tweet(oindividualist, string)
+        else:
+            result = actual_date - datetime.strptime(actual_case[2], "%Y-%m-%d").date()
+            string = f"Faltam {int(result.days/30)} meses e {result.days%30} dias para o início do semestre na UDESC."
+            print(string)
+            # tweet(oindividualist, string)
 
-    # print(datetime.now().date() <= datetime.strptime(last_post, "%Y-%m-%d").date())
-    # print(datetime.today().date())
-
-    # last_info = lines[0].split(",")
-
-    # if datetime
-
+        last_post_date = actual_date
+        last_post_file = open(generalPath + "\\ultimoPostData.txt", mode="w")
+        last_post_file.write(str(last_post_date))
 
 if __name__ == '__main__':
     oindividualist = api()
-    semestreUdesc()
-
-
+    while(True):
+        semestreUdesc(oindividualist)
     # tweet(oindividualist, "testando API meus caros (parte 02)...")

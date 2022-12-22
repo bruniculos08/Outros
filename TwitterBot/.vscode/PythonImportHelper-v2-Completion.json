@@ -102,7 +102,7 @@
         "kind": 2,
         "importPath": "MainCode",
         "description": "MainCode",
-        "peekOfCode": "def tweet(api: tweepy.API, message: str, image_path = None):\n    if image_path:\n        api.update_status_with_media(message, image_path)\n    else:\n        api.update_status(message)\n    print(\"Tweet successfully!\")\ndef semestreUdesc():\n    semesters_file = open(generalPath + \"\\\\semestres.txt\")\n    lines = semesters_file.readlines()\n    actual_case = lines[0].split(\",\")",
+        "peekOfCode": "def tweet(api: tweepy.API, message: str, image_path = None):\n    if image_path:\n        api.update_status_with_media(message, image_path)\n    else:\n        api.update_status(message)\n    print(\"Tweet successfully!\")\ndef semestreUdesc(oindividualist):\n    semesters_file = open(generalPath + \"\\\\semestres.txt\")\n    lines = semesters_file.readlines()\n    actual_case = lines[0].split(\",\")",
         "detail": "MainCode",
         "documentation": {}
     },
@@ -111,7 +111,7 @@
         "kind": 2,
         "importPath": "MainCode",
         "description": "MainCode",
-        "peekOfCode": "def semestreUdesc():\n    semesters_file = open(generalPath + \"\\\\semestres.txt\")\n    lines = semesters_file.readlines()\n    actual_case = lines[0].split(\",\")\n    print(actual_case)\n    last_post_file = open(generalPath + \"\\\\ultimoPostData.txt\")\n    last_post = last_post_file.readline()\n    actual_date = datetime.now().date()\n    last_post_date = datetime.strptime(last_post, \"%Y-%m-%d\").date()\n    if(actual_date > last_post_date):",
+        "peekOfCode": "def semestreUdesc(oindividualist):\n    semesters_file = open(generalPath + \"\\\\semestres.txt\")\n    lines = semesters_file.readlines()\n    actual_case = lines[0].split(\",\")\n    semesters_file.close()\n    print(actual_case)\n    last_post_file = open(generalPath + \"\\\\ultimoPostData.txt\", mode=\"r\")\n    last_post = last_post_file.readline()\n    last_post_file.close()\n    actual_date = datetime.now().date()",
         "detail": "MainCode",
         "documentation": {}
     },
