@@ -43,19 +43,19 @@ def semestreUdesc(oindividualist):
     actual_date = datetime.now().date()
     last_post_date = datetime.strptime(last_post, "%Y-%m-%d").date()
 
-    if(actual_date == actual_case[2]):
+    if(actual_date >= datetime.strptime(actual_case[2], "%Y-%m-%d").date()):
         semesters_file = open(generalPath + "\semestres.txt", mode="w")
         semesters_file.writelines(lines[1:])
 
-    if(actual_date > last_post_date):
+    if(actual_date >= last_post_date):
+        result = abs(datetime.strptime(actual_case[2], "%Y-%m-%d").date() - actual_date)
         if(actual_case[0] == "fim"):
-            result = datetime.strptime(actual_case[2], "%Y-%m-%d").date() - actual_date
-            string = f"Faltam {int(result.days/30)} meses e {result.days%30} dias para o fim do semestre na UDESC."
+            string = f"Faltam {abs(int(result.days/30))} meses e {result.days%30} dias para o fim do semestre na UDESC."
             print(string)
             # tweet(oindividualist, string)
         else:
-            result = actual_date - datetime.strptime(actual_case[2], "%Y-%m-%d").date()
-            string = f"Faltam {int(result.days/30)} meses e {result.days%30} dias para o início do semestre na UDESC."
+            print(result)
+            string = f"Faltam {abs(int(result.days/30))} meses e {result.days%30} dias para o início do semestre na UDESC."
             print(string)
             # tweet(oindividualist, string)
 
@@ -65,6 +65,6 @@ def semestreUdesc(oindividualist):
 
 if __name__ == '__main__':
     oindividualist = api()
-    while(True):
-        semestreUdesc(oindividualist)
+    #while(True):
+    semestreUdesc(oindividualist)
     # tweet(oindividualist, "testando API meus caros (parte 02)...")
